@@ -1,11 +1,39 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main class="max-w-4xl mx-auto px-6 py-12">
+		<!-- Header -->
+		<h1 class="text-5xl font-bold mb-16">Atticus Wang</h1>
+		
+		<!-- Bio and Photo Section -->
+		<section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+			<!-- Bio -->
+			<div class="flex items-center">
+				<div class="text-lg leading-relaxed text-gray-700 space-y-4">
+					<p>Welcome to my world!</p>
+					<p>My name is Zifan Wang 王子凡. I mostly go by Atticus.</p>
+					<p>As of summer 2025, I am a rising senior at MIT studying pure math and machine learning. At the moment, I am mostly thinking about technical AI safety.</p>
+					<p>In a parallel universe, I may be a mathematician, a guitarist, a chemist, or a writer.</p>
+				</div>
+			</div>
+			
+			<!-- Photo -->
+			<div class="flex justify-center items-center">
+				<img src="/profile.jpg" alt="Atticus Wang" class="w-66 h-auto rounded-lg" />
+			</div>
+		</section>
+		
+		<!-- Navigation Links -->
+		<nav class="text-center text-lg">
+			<a href="/cv.pdf" class="text-blue-600 hover:text-blue-800 transition-colors">CV</a>
+			<span class="mx-3 text-gray-400">|</span>
+			<a href="/blog" class="text-blue-600 hover:text-blue-800 transition-colors">Blog</a>
+			<span class="mx-3 text-gray-400">|</span>
+			<a href="https://github.com/chry-santhemum" class="text-blue-600 hover:text-blue-800 transition-colors">GitHub</a>
+			<span class="mx-3 text-gray-400">|</span>
+			<a href="/projects" class="text-blue-600 hover:text-blue-800 transition-colors">Projects</a>
+		</nav>
+	</main>
 </Layout>
