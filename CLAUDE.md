@@ -33,5 +33,28 @@ This is an Astro website project using Tailwind CSS for styling. The project is 
 
 ### Key Files
 - `astro.config.mjs` - Main configuration file for Astro and integrations
-- `src/styles/global.css` - Global CSS with Tailwind imports
+- `src/styles/global.css` - Global CSS with Tailwind imports and Open Sans font
 - `src/layouts/Layout.astro` - Base layout wrapper for pages
+- `tailwind.config.mjs` - Tailwind configuration with Open Sans as default font
+
+## Current Site Structure
+
+### Pages
+- `index.astro` - Homepage with bio, photo, and navigation (CV | Blog | GitHub | Projects)
+- `blog.astro` - Blog page (currently shows "coming soon")
+- `projects.astro` - Projects page with learning seminar notes and references
+
+### Static Assets
+- `public/cv.pdf` - CV document (linked from homepage)
+- `public/profile.jpg` - Profile photo (referenced in homepage)  
+- `public/projects/` - Directory containing PDF files for projects/notes
+
+### Design Decisions
+- **Font**: Open Sans throughout (configured in global.css and tailwind.config.mjs)
+- **Navigation**: Pipe-separated links with subtle color hover effects
+- **Photo**: Aspect ratio preserved, sized at w-56
+- **Typography**: Left-aligned headings, consistent text-lg sizing for content
+- **GitHub**: Links to https://github.com/chry-santhemum
+
+### Deployment
+- Deployed to Netlify with custom domain using Netlify nameservers
